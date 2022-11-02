@@ -1,0 +1,130 @@
+<!--  -->
+{% if section.blocks.size > 0 %}
+<section class="page-section pt-5" id="shopBy">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mainTitle"><h3>SHOP BY DIAMOND SHAPE</h3></div>
+            </div>
+        </div>
+           <div class="row row-cols-5 row-cols-md-5 row-cols-sm-auto row-cols-lg-auto row-cols-xl-auto g-2 g-lg-4 shopList justify-content-between text-center">
+                {% for block in section.blocks %} 
+                    {% if block.type == 'slide'%}
+                        <div class="col">
+                            <a href="{{block.settings.slide_link}}" target="_blank">
+                                <div class="card border-0 text-center">
+                                    <div class="card-body p-0">
+                                    <div class="gems">
+                                        <img src="{{ block.settings.slide_img | img_url: 'original' }}" alt="gems" class="mb-2 img-fluid">
+                                    </div>
+                                    <h5 class="card-title">{{ block.settings.slide_title }}</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+               
+                 {% elsif block.type == 'Text' %}
+
+                </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 col-sm-5">
+                            <div class="shopCaption text-center">
+                                <p>{{ block.settings.slide_text1 }}</p>
+                                <h4>DESIGN YOUR OWN RING ></h4> 
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="row justify-content-center align-items-center diamondStone">
+                        <div class="col-lg-6 col-sm-6 order-2 order-sm-1 order-lg-1">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <h3>FINDING THE PERFECT DIAMOND IS AS INTIMATE AS FINDINGTHE PERFECT SOULMATE.</h3>
+                                    <p>{{ block.settings.slide_text2 }}</p>
+                                    <div class="d-grid">
+                                        <a href="#" class="btn btn-outline rounded-0">VISIT OUR SHOWROOM</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>FIND “THE One”</h4>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 order-1 order-sm-2 order-lg-2">
+                            <div class="d-flex align-items-center justify-content-end diamondimgF text-end">
+                                <div class="flex-fill diamonfSq">
+                                    <img src="{{ block.settings.gems_img1 | img_url: 'original' }}" alt="gems" class="mb-2 img-fluid">
+                                </div>
+                                <div class="flex-fill diamonfRq">
+                                    <img src="{{ block.settings.gems_img2 | img_url: 'original' }}" alt="gems" class="mb-2 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                {% endif %}
+               
+            {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+{% schema %}
+{
+"name": "shop by",
+"blocks": [
+  {
+  "type": "slide",
+  "name": "Shape",
+  "settings": [
+        {
+          "type": "url",
+          "id": "slide_link",
+          "label": "Slide link"
+        },
+        {
+          "type": "text",
+          "id": "slide_title",
+          "label": "Slider title"
+        },
+        {
+          "type": "image_picker",
+          "id": "slide_img",
+          "label": "Add img for slide"
+        }
+      ]
+    },
+    {
+    "type": "Text",
+    "name": "ringDesc",
+     "settings": [
+        {
+            "type": "textarea",
+            "id": "slide_text1",
+            "label": "Slide text"
+        },
+        {
+            "type": "textarea",
+            "id": "slide_text2",
+            "label": "Slide text"
+        },
+        {
+            "type": "image_picker",
+            "id": "gems_img1",
+            "label": "Add img for slide"
+        },
+        {
+            "type": "image_picker",
+            "id": "gems_img2",
+            "label": "Add img for slide"
+        } 
+    ]
+    }
+  ],
+  
+  "presets": [
+  {
+    "name": "shopp"
+  }
+]
+}
+{% endschema %} 

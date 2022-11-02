@@ -1,0 +1,41 @@
+{% if section.blocks.size > 0 %}
+<section class="page-section bg-peach pb-0" id="ourCommunity">
+    <div class="container">
+        <div class="row text-center commTitle">
+            <div class="col-12">
+                <h2>We <img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/we.png?v=1659447102" alt="Our Community"> OUR</h2>
+                <h3>COMMUNITY</h3>
+                <p>Genesis is proud to be a part of each of the communities we reside in and has been voted <span class="fw-bold">“Best Jewelry Store” & “Best Place to Buy an Engagement Ring” </span> 12 yeats & counting from supporting. Our Tennessee Titans to building the chabad synagogue to support the jewish community in Nashville to being the Official Jeweler to Fiona the hippo at the Cincinnato Zoo & Botanical Gardens. We believe in supporting and partnering with our local businesses. Learn more about our community involvement and how to become a Genesis Partner below.</p>
+            </div>
+        </div>
+        <div class="row row-cols-3 row-cols-md-3 g-4 text-center commList">
+            {% for block in section.blocks %} 
+                <div class="col">
+                    <div class="card border-0 bg-transparent mt-4">
+                        <img src="{{ block.settings.comm_img1 | img_url: 'original' }}" alt="community" class="img-fluid">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>   
+    </div>
+</section>
+{% endif %}
+
+{% schema %} 
+{
+	"name": "Our Community",
+	"max_blocks": 3,
+	"blocks": [{
+		"type": "slide",
+		"name": "Slide",
+		"settings": [{
+			"type": "image_picker",
+			"id": "comm_img1",
+			"label": "Add img for slide"
+		}]
+	}],
+	"presets": [{
+		"name": "community"
+	}]
+}
+{% endschema %}

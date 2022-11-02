@@ -1,0 +1,47 @@
+<section class="page-section" id="ringBox">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-5 col-sm-6">
+                {{ section.settings.image_1 | image_url: width: auto | image_tag: alt: 'Ring Box', srcset: nil, class: 'img-fluid' }}
+            </div>
+            <div class="col-lg-5 col-sm-6">
+                <div class="boxDetails text-center">
+                    <div class="boxCaption">
+                        {{ block.settings.heading | escape }}
+                        <h2 class="txtM">FIND THE</h2>
+                        <h3 class="boxTitle">perfect</h3>
+                        <p class="boxTagline">ENGAGEMENT RING</p>
+                    </div>
+                    <div class="boxSelection">
+                        <div class="d-grid">
+                            <a href="#" class="btn btn-outline rounded-0">START WITH A SETTING</a>
+                            <div class="orHr">Or</div>
+                            <a href="#" class="btn btn-outline rounded-0">START WITH A DIAMOND</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  -->
+
+{% schema %}
+{
+  "name": "Ring Box",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image"    
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ring",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,62 @@
+{% if section.blocks.size > 0 %}
+<section class="page-section pt-0" id="designersBlock">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+               <h3 class="m-0">SHOP OUR</h3> 
+               <h4 class="m-0">DESIGNERS</h4>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 designCap">
+          {% for block in section.blocks %} 
+            <div class="col">
+              <a href="{{block.settings.card_link}}" target="_blank">
+                  <div class="card border-0 bg-transparent">
+                    <img src="{{ block.settings.design_img1 | img_url: 'original' }}" alt="Tacori" class="card-img-top">
+                    <div class="card-body py-0">
+                      <h5 class="card-title mb-0"> {{ block.settings.card_text1 }}</h5>
+                    </div>
+                  </div>
+               </a>
+            </div>
+         {% endfor %}
+        </div>
+       <div class="view"><a href="#" class="viewAll">BROWSE ALL DESIGNERs ></a></div>
+    </div>
+</section>
+{% endif %}
+
+{% schema %}
+{
+"name": "Designer Block",
+"max_blocks": 3,
+"blocks": [
+  {
+  "type": "slide",
+  "name": "Slide",
+  "settings": [
+        {
+          "type": "url",
+          "id": "card_link",
+          "label": "Slide link"
+        },
+        {
+          "type": "text",
+          "id": "card_text1",
+          "label": "Slider title"
+        },
+        {
+          "type": "image_picker",
+          "id": "design_img1",
+          "label": "Add img for slide"
+        }
+      ]
+    }
+  ],
+  "presets": [
+  {
+    "name": "designer"
+  }
+]
+}
+{% endschema %}

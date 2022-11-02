@@ -1,0 +1,212 @@
+<style>
+    .liClass{
+        color: orange;
+    }
+</style>
+
+<script type="text/javascript">
+
+
+    var baseUrlAvail = "https://svc-1001-usf.hotyon.com/search";
+    let beforeUrlModied;
+    let afterUrlModied;
+    var urlModifiedPart = "";
+    let newFacetFilters = {};
+
+    let endFetchNumberData = 25;
+
+
+    var mainEle = document.querySelector('#custom-filters');
+
+    
+
+    let clickHandlerFunction = (facetId, facetName, productInfo) => {
+        
+        console.log(`facetName::: ${facetName} , facetId ::: ${facetId} , productInfo::: ${productInfo}`);
+        
+
+        if(newFacetFilters.hasOwnProperty(facetId)){
+            console.log("facet filter id check confirmed");
+        }
+
+        newFacetFilters[facetId]=[facetName,[productInfo]]
+        console.log(newFacetFilters,"check");
+
+        
+        // console.log();
+        
+        
+
+        urlModifiedPart = `?q=&apiKey=05cb6118-0f5f-49a6-924c-4026338c5e04&locale=en&getProductDescription=0&collection=&facetFilters={"${facetId}":["${facetName}",["${productInfo}"]]}&skip=0&take=500`;
+
+        let cusUrl = urlModifiedPart.split("&skip");
+        afterUrlModied = cusUrl[0];
+        
+
+        makeAjaxCall(urlModifiedPart);
+
+        // let productlabel = productEle;
+        // console.log(productlabel.label);
+
+    }
+
+
+    $(window).scroll(function() {   
+
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+
+            alert("number of data to be fetched :: " + endFetchNumberData);
+            endFetchNumberData; 
+            
+            
+
+            if(beforeUrlModied == afterUrlModied){
+
+
+                // urlModifiedPart = 
+            }
+        }
+    });
+
+    
+    let displayFilterData = (data) => {
+
+        // console.log("check data :::: ", data);
+
+        console.log(`Before modifying url :: ${beforeUrlModied} and after modifying url :: ${afterUrlModied}`);
+
+
+        if(beforeUrlModied !== afterUrlModied){
+            beforeUrlModied == afterUrlModied;
+            document.querySelector('[filtered-produc-list]').innerHTML = "";
+        }
+
+        
+
+        // document.querySelector('[filtered-produc-list]').innerHTML = "";
+
+        data.items.forEach((prod) => {
+
+            let imageURL = prod.images[0].url;
+            
+            document.querySelector('[filtered-produc-list]').innerHTML += `<div><img src="${imageURL}" style="max-width: 150px"><p>${prod.title}</p><div product-id="${prod.id}"></div></div>`;
+            
+            // console.log("Checking the product variants ::: ",prod.variants);
+
+
+            prod.variants.forEach((varia, index) => {
+                // console.log("check index value ::: ", typeof varia);
+                // console.log("Checking the index :::: ", varia.id);
+
+                let variantIndexNum = varia.imageIndex ;
+                let variantImage = prod.images[variantIndexNum]?.url;
+
+                if( !prod.images[variantIndexNum]?.url){
+                    variantImage = "https://cdn.shopify.com/s/files/1/0619/0039/0599/files/no-image-icon-4.png?v=1660831540";
+                }
+                // console.log("Variant image check ::: ",typeof variantImage);
+                // console.log(`Checking Variant image for ${prod.title} :::: `,variantImage.url);
+
+                document.querySelector(`[product-id="${prod.id}"]`).innerHTML += `<img src="${variantImage}" style="height: 40px; width: 40px;">  ${varia.id} /// `;
+            })
+        })
+
+        
+    }
+    
+
+    var collectionFilterType = (data) => {
+
+        // console.log(data);
+        
+        document.querySelector('[filter-list-id="cus-filter-list"]').innerHTML = "";
+
+        data.facets.forEach((ele) => {
+            document.querySelector('[filter-list-id="cus-filter-list"]').innerHTML += `<div id='${ele.id}'><h3>${ele.title}<h3></div>`;
+
+            if(ele.facetName == 'collections'){
+                ele.labels.forEach((labe) => {
+                    // console.log('Check for Labels::::::  ', labe);
+                
+                    document.getElementById(ele.id).innerHTML += `<li root-selector-id='${labe.id}' onclick="clickHandlerFunction('${ele.id}','${ele.facetName}','${labe.id}')">${labe.label}</li>`;
+
+                })
+            }
+        })
+    }
+
+    
+
+    
+
+    
+    // making api call for different cases
+    var makeAjaxCall = (urlModifiedPart) => {
+        $.ajax({
+            url: `${baseUrlAvail}${urlModifiedPart}`,
+            success: function(data){
+                
+                console.log(data);
+                // console.log(data.data.items.length,"check array");
+
+
+                // $.each(data.data.items, function(i, element){
+                //     mainEle.innerHTML += `<li class="liClass">${element.title}</li>`;
+                // })
+
+                collectionFilterType(data.data);
+
+                displayFilterData(data.data);
+
+                // data.data.items.forEach(element => {
+                //     console.log(element.title);
+                //     console.log(`<li>${element.title}</li>`)
+                //     // displaying all the elements in the dom
+                //     mainEle.innerHTML += `<li>${element.title}</li>`;
+                    
+                // });
+            },
+            error: function(err){
+                console.log(err);
+            }
+        });
+    }
+
+
+    // url: `https://svc-1001-usf.hotyon.com/search?q=&apiKey=05cb6118-0f5f-49a6-924c-4026338c5e04&locale=en&getProductDescription=0&collection=&facetFilters={"696604529":["option:Color",["Blue"]],"1297812121":["vendor",["Mobikasa test development"]]}&skip=0&take=28`,
+
+
+
+    // https://svc-1001-usf.hotyon.com/search?q=&apiKey=05cb6118-0f5f-49a6-924c-4026338c5e04&locale=en&getProductDescription=0&collection=&facetFilters={"134199812":["collections",["290025242823"]]}&skip=0&take=28
+
+    // making a first call when the document is loaded
+    $(document).ready(function(){
+        $.ajax({
+            url: `${baseUrlAvail}?q=&apiKey=05cb6118-0f5f-49a6-924c-4026338c5e04&locale=en&getProductDescription=0&collection=&skip=0&take=28`,
+            success: function(data){
+                
+                // console.log(data);
+                // console.log(data.data.items.length,"check array");
+
+
+                // $.each(data.data.items, function(i, element){
+                //     mainEle.innerHTML += `<li class="liClass">${element.title}</li>`;
+                // })
+
+                collectionFilterType(data.data);
+
+                // data.data.items.forEach(element => {
+                //     console.log(element.title);
+                //     console.log(`<li>${element.title}</li>`)
+                //     // displaying all the elements in the dom
+                //     mainEle.innerHTML += `<li>${element.title}</li>`;
+                    
+                // });
+            },
+            error: function(err){
+                console.log(err);
+            }
+        });
+    })
+
+</script>

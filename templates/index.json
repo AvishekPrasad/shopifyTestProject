@@ -1,0 +1,380 @@
+{
+  "sections": {
+    "1659347340920a6a86": {
+      "type": "carousel",
+      "blocks": {
+        "1659347340832545ac-0": {
+          "type": "slide",
+          "settings": {
+            "img_mobile": "shopify:\/\/shop_images\/m-slide-1.jpg",
+            "img_desktop": "shopify:\/\/shop_images\/Bg-slide-1.jpg",
+            "img_opacity": 1,
+            "title": "SPRING BRIDAL EVENT",
+            "title_size": "h2",
+            "description": "<p>APRIL 8-10 TH<\/p>",
+            "description_size": "fs-5",
+            "btn_text": "BOOK NOW",
+            "btn_url": "",
+            "btn_color": "btn-primary",
+            "btn_size": ""
+          }
+        },
+        "1659347340832545ac-1": {
+          "type": "slide",
+          "settings": {
+            "img_mobile": "shopify:\/\/shop_images\/m-slide-1.jpg",
+            "img_desktop": "shopify:\/\/shop_images\/Bg-slide-1.jpg",
+            "img_opacity": 1,
+            "title": "SPRING BRIDAL EVENT",
+            "title_size": "h2",
+            "description": "<p>APRIL 8-10 TH<\/p>",
+            "description_size": "fs-5",
+            "btn_text": "BOOK NOW",
+            "btn_url": "",
+            "btn_color": "btn-primary",
+            "btn_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "1659347340832545ac-0",
+        "1659347340832545ac-1"
+      ],
+      "settings": {
+        "controls": true,
+        "indicators": true,
+        "autoplay": true,
+        "animation": "slide",
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "165935258700491a3f": {
+      "type": "slick-slider",
+      "blocks": {
+        "0d1ff1b4-cd41-40e9-8fb0-bdfffc40d56d": {
+          "type": "slide",
+          "settings": {
+            "button_title": "",
+            "slide_link": "#",
+            "slide_title": "Engagement Rings",
+            "slide_text": "",
+            "slide_img": "shopify:\/\/shop_images\/category-1.jpg"
+          }
+        },
+        "3a87126c-4573-4904-accd-9422acb27c8e": {
+          "type": "slide",
+          "settings": {
+            "button_title": "",
+            "slide_link": "#",
+            "slide_title": "Wedding Bands",
+            "slide_text": "",
+            "slide_img": "shopify:\/\/shop_images\/category-2.jpg"
+          }
+        },
+        "1886f6bc-ff26-4fde-8f25-9b79984336e1": {
+          "type": "slide",
+          "settings": {
+            "button_title": "",
+            "slide_link": "#",
+            "slide_title": "Luxury WATches & PRE-Owned Rolex",
+            "slide_text": "",
+            "slide_img": "shopify:\/\/shop_images\/category-3.jpg"
+          }
+        },
+        "d8dbf0ed-4a33-4705-a13d-7afe889669d6": {
+          "type": "slide",
+          "settings": {
+            "button_title": "",
+            "slide_link": "#",
+            "slide_title": "NECKLACES",
+            "slide_text": "",
+            "slide_img": "shopify:\/\/shop_images\/category-4.jpg"
+          }
+        },
+        "5bcdbf8e-1a08-4745-b5f9-46f8e4a0ceaa": {
+          "type": "slide",
+          "settings": {
+            "button_title": "",
+            "slide_link": "#",
+            "slide_title": "FASHION RINGS",
+            "slide_text": "",
+            "slide_img": "shopify:\/\/shop_images\/category-5.jpg"
+          }
+        },
+        "2f3d1434-5174-4318-a9b1-17007fcf645f": {
+          "type": "slide",
+          "settings": {
+            "button_title": "",
+            "slide_link": "#",
+            "slide_title": "DIAMOND  Rings",
+            "slide_text": "",
+            "slide_img": "shopify:\/\/shop_images\/Rectangle_49_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "0d1ff1b4-cd41-40e9-8fb0-bdfffc40d56d",
+        "3a87126c-4573-4904-accd-9422acb27c8e",
+        "1886f6bc-ff26-4fde-8f25-9b79984336e1",
+        "d8dbf0ed-4a33-4705-a13d-7afe889669d6",
+        "5bcdbf8e-1a08-4745-b5f9-46f8e4a0ceaa",
+        "2f3d1434-5174-4318-a9b1-17007fcf645f"
+      ],
+      "settings": {
+        "carousel_autoplay": true,
+        "carousel_dots": false,
+        "carousel_arrows": true,
+        "autoplay_speed": "5000"
+      }
+    },
+    "16593596229b2466b7": {
+      "type": "ringbox",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/ring-box.png"
+      }
+    },
+    "165936704518324518": {
+      "type": "shopby",
+      "blocks": {
+        "4df0d49d-8d9d-4f00-9f77-24af2ad338e2": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/products\/asscher",
+            "slide_title": "Round",
+            "slide_img": "shopify:\/\/shop_images\/round-gems-01.png"
+          }
+        },
+        "6eda0754-d3c2-4284-a27b-11b67196ac0f": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/products\/copy-of-copy-of-copy-of-colourful-bouquet-of-mixed-flowers-3",
+            "slide_title": "Princess",
+            "slide_img": "shopify:\/\/shop_images\/Princess-gems-02.png"
+          }
+        },
+        "89e119b3-7069-43b1-acfc-47878d620f18": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/products\/emerald",
+            "slide_title": "Emerald",
+            "slide_img": "shopify:\/\/shop_images\/Emerald-gems-03.png"
+          }
+        },
+        "c3b3581e-1c66-4de1-b92e-d1b93c8f095c": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/products\/pear",
+            "slide_title": "Pear",
+            "slide_img": "shopify:\/\/shop_images\/Pear-gems-04.png"
+          }
+        },
+        "501df746-7113-4112-b452-1606d0c73c82": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/products\/radiant",
+            "slide_title": "Radiant",
+            "slide_img": "shopify:\/\/shop_images\/Radiant-gems-05.png"
+          }
+        },
+        "b500ee69-7cdc-4da9-b07b-c22d47bf1303": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "#",
+            "slide_title": "Marquise",
+            "slide_img": "shopify:\/\/shop_images\/Marquise-gems-06.png"
+          }
+        },
+        "7754fcbd-f133-4b32-8cb2-034860434414": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/products\/cushion",
+            "slide_title": "Cushion",
+            "slide_img": "shopify:\/\/shop_images\/Cushion-gems-07.png"
+          }
+        },
+        "13d20997-d270-4e58-bed9-970267aaef35": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/products\/heart",
+            "slide_title": "Heart",
+            "slide_img": "shopify:\/\/shop_images\/Heart-gems-08.png"
+          }
+        },
+        "f33df14f-66d4-4248-b5d5-3a663d4654d7": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/products\/oval",
+            "slide_title": "Oval",
+            "slide_img": "shopify:\/\/shop_images\/Oval-gems-09.png"
+          }
+        },
+        "848e8f90-e12a-47ad-a296-6a3e389ec855": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "shopify:\/\/products\/asscher",
+            "slide_title": "Asscher",
+            "slide_img": "shopify:\/\/shop_images\/Asscher-gems-10.png"
+          }
+        },
+        "04f247b6-08b9-4719-958b-334625471c05": {
+          "type": "Text",
+          "settings": {
+            "slide_text1": "Being a direct diamond importer, we are able to provide you with the best quality diamonds, at the best prices nationwide.",
+            "slide_text2": "Let our Trusted Advisors help ease the search in person at one of our showrooms near you.",
+            "gems_img1": "shopify:\/\/shop_images\/diamond-01.png",
+            "gems_img2": "shopify:\/\/shop_images\/diamond-02.png"
+          }
+        }
+      },
+      "block_order": [
+        "4df0d49d-8d9d-4f00-9f77-24af2ad338e2",
+        "6eda0754-d3c2-4284-a27b-11b67196ac0f",
+        "89e119b3-7069-43b1-acfc-47878d620f18",
+        "c3b3581e-1c66-4de1-b92e-d1b93c8f095c",
+        "501df746-7113-4112-b452-1606d0c73c82",
+        "b500ee69-7cdc-4da9-b07b-c22d47bf1303",
+        "7754fcbd-f133-4b32-8cb2-034860434414",
+        "13d20997-d270-4e58-bed9-970267aaef35",
+        "f33df14f-66d4-4248-b5d5-3a663d4654d7",
+        "848e8f90-e12a-47ad-a296-6a3e389ec855",
+        "04f247b6-08b9-4719-958b-334625471c05"
+      ],
+      "settings": {}
+    },
+    "1659431785402f527a": {
+      "type": "designers-block",
+      "blocks": {
+        "e00977ce-12c6-4e02-80c5-45f74ddca5f8": {
+          "type": "slide",
+          "settings": {
+            "card_link": "shopify:\/\/products\/tacori",
+            "card_text1": "TACORI",
+            "design_img1": "shopify:\/\/shop_images\/Tacori_9e387f73-3d40-4643-b473-ab2e62d3bd03.jpg"
+          }
+        },
+        "d326bb69-9670-4976-92be-c7b9285eac01": {
+          "type": "slide",
+          "settings": {
+            "card_link": "shopify:\/\/products\/gabriel-co",
+            "card_text1": "GABRIEL & CO",
+            "design_img1": "shopify:\/\/shop_images\/gabriel_136018bf-525d-44eb-81b9-48ccae88a371.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e00977ce-12c6-4e02-80c5-45f74ddca5f8",
+        "d326bb69-9670-4976-92be-c7b9285eac01"
+      ],
+      "settings": {}
+    },
+    "16593641892dc5ff67": {
+      "type": "advantage-gen",
+      "blocks": {
+        "febbb2aa-6760-4838-95f5-727ee47c093e": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "#",
+            "slide_title": "DIRECT DIAMOND IMPORTERS",
+            "slide_img": "shopify:\/\/shop_images\/direct-diamond.png"
+          }
+        },
+        "bcb93abd-6220-40d4-8dff-c9e5c8876d2c": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "#",
+            "slide_title": "RISK FREE SHOPPING",
+            "slide_img": "shopify:\/\/shop_images\/risk-free-shopping.png"
+          }
+        },
+        "24db95d5-5a8e-4db4-841b-ff33763a5937": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "#",
+            "slide_title": "110% NATURAL DIAMOND UPGRADE",
+            "slide_img": "shopify:\/\/shop_images\/natural-diamond.png"
+          }
+        }
+      },
+      "block_order": [
+        "febbb2aa-6760-4838-95f5-727ee47c093e",
+        "bcb93abd-6220-40d4-8dff-c9e5c8876d2c",
+        "24db95d5-5a8e-4db4-841b-ff33763a5937"
+      ],
+      "settings": {
+        "carousel_autoplay": false,
+        "carousel_dots": false,
+        "carousel_arrows": false,
+        "autoplay_speed": "7000"
+      }
+    },
+    "165936413398e99970": {
+      "type": "our-community",
+      "blocks": {
+        "a3646b62-6930-420a-9be2-73f35a64f6ea": {
+          "type": "slide",
+          "settings": {
+            "comm_img1": "shopify:\/\/shop_images\/comm-01.jpg"
+          }
+        },
+        "6e2bfdd7-70d5-403d-bfe6-ee912749e6fe": {
+          "type": "slide",
+          "settings": {
+            "comm_img1": "shopify:\/\/shop_images\/comm-02.jpg"
+          }
+        },
+        "952dcdd6-45df-4b88-9c91-92707d27822d": {
+          "type": "slide",
+          "settings": {
+            "comm_img1": "shopify:\/\/shop_images\/comm-03.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "a3646b62-6930-420a-9be2-73f35a64f6ea",
+        "6e2bfdd7-70d5-403d-bfe6-ee912749e6fe",
+        "952dcdd6-45df-4b88-9c91-92707d27822d"
+      ],
+      "settings": {}
+    },
+    "16594355178bab9c57": {
+      "type": "involved",
+      "blocks": {
+        "13d18854-1dd1-4946-bc17-2546a8df198b": {
+          "type": "slide",
+          "settings": {
+            "invo_img1": "shopify:\/\/shop_images\/logo-01.png"
+          }
+        },
+        "5e26d13d-c955-45d9-a4d3-13094e0a8958": {
+          "type": "slide",
+          "settings": {
+            "invo_img1": "shopify:\/\/shop_images\/logo-03.png"
+          }
+        },
+        "b76514a7-5c57-43f4-9f93-449268e4c273": {
+          "type": "slide",
+          "settings": {
+            "invo_img1": "shopify:\/\/shop_images\/logo-02_85f47768-c63f-4f2c-be83-da845d3221a1.png"
+          }
+        }
+      },
+      "block_order": [
+        "13d18854-1dd1-4946-bc17-2546a8df198b",
+        "5e26d13d-c955-45d9-a4d3-13094e0a8958",
+        "b76514a7-5c57-43f4-9f93-449268e4c273"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "1659347340920a6a86",
+    "165935258700491a3f",
+    "16593596229b2466b7",
+    "165936704518324518",
+    "1659431785402f527a",
+    "16593641892dc5ff67",
+    "165936413398e99970",
+    "16594355178bab9c57"
+  ]
+}
